@@ -1,0 +1,43 @@
+﻿<Page x:Class="WpfApp1.Page3"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="667" d:DesignWidth="375"
+      Title="Page3">
+
+    <Grid Background="White">
+        <TextBox x:Name="music" TextWrapping="Wrap" Text="jazz, hip-hop, ..." FontSize="24" Margin="10,154,10,435" TextAlignment="Center" Foreground="#FFC9C1C1" GotKeyboardFocus="music_GotKeyboardFocus" LostKeyboardFocus="music_LostKeyboardFocus">
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.983"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <Label Content="Verify Account:" HorizontalAlignment="Left" Height="37" Margin="10,251,0,0" VerticalAlignment="Top" Width="154" FontSize="18" Foreground="#DD000000" FontWeight="Bold"/>
+        <Label Content="Upload Licence" HorizontalAlignment="Left" Height="37" Margin="23,288,0,0" VerticalAlignment="Top" Width="144" FontSize="18"/>
+        <Label Content="Upload School ID" HorizontalAlignment="Left" Height="37" Margin="23,329,0,0" VerticalAlignment="Top" Width="159" FontSize="18"/>
+        <Label Content="You can verify later as well" HorizontalAlignment="Left" Margin="14,362,0,0" VerticalAlignment="Top" Width="200" FontSize="16" Foreground="#DD494949"/>
+        <Button x:Name="submit" Content="DONE" HorizontalAlignment="Left" Height="51" Margin="59,598,0,0" VerticalAlignment="Top" Width="263" FontSize="16" BorderBrush="#FF938E8E" Foreground="White" Background="#FFCB3434" Click="submit_Click"/>
+        <Label Content="Set up Profile" HorizontalAlignment="Left" Height="55" Margin="4,54,0,0" VerticalAlignment="Top" Width="279" FontSize="36" FontFamily="Segoe UI Semibold"/>
+        <Rectangle HorizontalAlignment="Left" Height="60" Stroke="Black" VerticalAlignment="Top" Width="375" Fill="Black"/>
+        <Label Content="SCHPOOL" Height="50" Margin="120.75,10,119.25,0" VerticalAlignment="Top" Background="Black" Foreground="#FFCB3434" FontSize="26" FontWeight="Bold"/>
+        <Button Content="&lt;" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="69" BorderBrush="Black" Background="Black" FontWeight="Bold" FontSize="24" Click="Button_Click_2"/>
+        <Label Content="Enter the Music Genres you enjoy:" HorizontalAlignment="Left" Height="45" Margin="14,119,0,0" VerticalAlignment="Top" Width="351" FontSize="20" FontWeight="Bold"/>
+        <Label Content="Tell us more about your self (BIO):" HorizontalAlignment="Left" Height="45" Margin="10,418,0,0" VerticalAlignment="Top" Width="351" FontSize="20" FontWeight="Bold"/>
+        <TextBox x:Name="bio" TextWrapping="Wrap" Text="What do you like to do?" FontSize="18" Margin="14,446,6,111" TextAlignment="Center" Foreground="#FFA8A6A6" LostKeyboardFocus="bio_LostKeyboardFocus" GotKeyboardFocus="bio_GotKeyboardFocus">
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.983"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="license" HorizontalAlignment="Left" Height="37" Margin="182,280,0,0" TextWrapping="Wrap" Text="enter file name" VerticalAlignment="Top" Width="189" FontSize="16" TextAlignment="Center" GotKeyboardFocus="license_GotKeyboardFocus" LostKeyboardFocus="license_LostKeyboardFocus"/>
+        <TextBox x:Name="id" HorizontalAlignment="Left" Height="37" Margin="182,325,0,0" TextWrapping="Wrap" Text="enter file name" VerticalAlignment="Top" Width="189" FontSize="16" TextAlignment="Center" LostKeyboardFocus="id_LostKeyboardFocus" GotKeyboardFocus="id_GotKeyboardFocus"/>
+
+    </Grid>
+</Page>

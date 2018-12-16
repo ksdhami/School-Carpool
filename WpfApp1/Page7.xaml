@@ -1,0 +1,241 @@
+﻿<Page x:Class="WpfApp1.Page7"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="667" d:DesignWidth="375"
+      Title="Page7">
+
+    <Grid Background="White">
+        <Rectangle HorizontalAlignment="Left" Height="60" Stroke="Black" VerticalAlignment="Top" Width="375" Fill="Black" Margin="0,0,-0.333,0"/>
+        <Label Content="SCHPOOL" Height="50" Margin="120.75,10,119.25,0" VerticalAlignment="Top" Background="Black" Foreground="Red" FontSize="26" FontWeight="Bold"/>
+        <Button x:Name="Notification" Height="Auto" UseLayoutRounding="True" Margin="5,11,296.667,612.667" Background="{x:Null}" BorderBrush="{x:Null}" Click="Notification_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="notify.png" Stretch="Uniform"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="message" Height="Auto" UseLayoutRounding="True" Margin="283,6,-0.333,606.667" Background="{x:Null}" BorderBrush="{x:Null}" Click="message_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="message.png" Stretch="Uniform"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="profile_but" Content="PROFILE" HorizontalAlignment="Left" Height="58" Margin="-1,611,0,-2.333" VerticalAlignment="Top" Width="96" FontSize="16" Background="Black" Foreground="White" BorderBrush="Black" Click="profile_but_Click"/>
+        <Button x:Name="home_but" Content="HOME" HorizontalAlignment="Left" Height="58" Margin="94,611,0,-2.333" VerticalAlignment="Top" Width="95" FontSize="16" Foreground="White" Background="Black" BorderBrush="Black" Click="Button_Click"/>
+        <Button x:Name="Ride_but" Content="RIDE" HorizontalAlignment="Left" Height="58" Margin="187,611,0,-2.333" VerticalAlignment="Top" Width="96" FontSize="16" Background="Red" Foreground="White" BorderBrush="Red"/>
+        <Button x:Name="Settings_but" Content="SETTING" HorizontalAlignment="Left" Height="58" Margin="281,611,-1.333,-2.333" VerticalAlignment="Top" Width="95" FontSize="16" Background="Black" Foreground="White" BorderBrush="Black" Click="Settings_but_Click"/>
+        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="456" Margin="4,75,0,0" VerticalAlignment="Top" Width="366" BorderBrush="#FF080808" FontSize="18" Background="White" Foreground="Black">
+            <TabItem x:Name="MyPools" Header="MyPools" BorderBrush="White" FontSize="26" Background="White" Margin="10,-2,-13.667,-0.333">
+                <Grid Background="White" Margin="0,18,0,0.333">
+                    <ListView x:Name="listView_Copy1" HorizontalAlignment="Left" Height="398" Margin="10,-17,0,0" VerticalAlignment="Top" Width="350" BorderBrush="Black" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn/>
+                            </GridView>
+                        </ListView.View>
+                        <Canvas Height="105" Width="327">
+                            <Rectangle Fill="White" HorizontalAlignment="Left" Height="98" Stroke="White" VerticalAlignment="Top" Width="329"/>
+                            <Image x:Name="pic1" HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="71" Source="white.png" Canvas.Left="8" Canvas.Top="32"/>
+                            <Label x:Name="info1" Content="" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="166" Canvas.Left="85" Canvas.Top="16" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden" UseLayoutRounding="False"/>
+                            <Label x:Name="dest1" Content="" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="66" Canvas.Left="255" Canvas.Top="11" Foreground="Red"/>
+                            <Image x:Name="rating1" HorizontalAlignment="Left" Height="69" VerticalAlignment="Top" Width="112" Source="white.png" Canvas.Left="85" Canvas.Top="27" Stretch="UniformToFill"/>
+                            <Rectangle x:Name="rect1" Fill="White" HorizontalAlignment="Left" Height="27" Stroke="White" VerticalAlignment="Top" Width="67" Canvas.Left="255" Canvas.Top="63"/>
+                            <Label x:Name="add1" Content="ADD" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="43" FontSize="16" Foreground="White" Canvas.Left="267" Canvas.Top="61"/>
+                            <Label x:Name="time1" Content="" Canvas.Left="12" Width="75" Height="27" Foreground="Red" FontSize="12"/>
+                        </Canvas>
+                        <Canvas Height="105" Width="327">
+                            <Rectangle Fill="White" HorizontalAlignment="Left" Height="98" Stroke="White" VerticalAlignment="Top" Width="329"/>
+                            <Image x:Name="pic2" HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="71" Source="white.png" Canvas.Left="8" Canvas.Top="32"/>
+                            <Label x:Name="info2" Content="" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="166" Canvas.Left="85" Canvas.Top="16" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden" UseLayoutRounding="False"/>
+                            <Label x:Name="dest2" Content="" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="66" Canvas.Left="255" Canvas.Top="11" Foreground="Red"/>
+                            <Image x:Name="rating2" HorizontalAlignment="Left" Height="69" VerticalAlignment="Top" Width="112" Source="white.png" Canvas.Left="85" Canvas.Top="27" Stretch="UniformToFill"/>
+                            <Rectangle x:Name="rect2" Fill="White" HorizontalAlignment="Left" Height="27" Stroke="White" VerticalAlignment="Top" Width="67" Canvas.Left="255" Canvas.Top="63"/>
+                            <Label x:Name="add2" Content="ADD" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="43" FontSize="16" Foreground="White" Canvas.Left="267" Canvas.Top="61"/>
+                            <Label x:Name="time2" Content="" Canvas.Left="12" Width="75" Height="27" Foreground="Red" FontSize="12"/>
+                        </Canvas>
+                        <Canvas Height="105" Width="327">
+                            <Rectangle Fill="White" HorizontalAlignment="Left" Height="98" Stroke="White" VerticalAlignment="Top" Width="329"/>
+                            <Image x:Name="pic3" HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="71" Source="white.png" Canvas.Left="8" Canvas.Top="32"/>
+                            <Label x:Name="info3" Content="" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="166" Canvas.Left="85" Canvas.Top="16" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden" UseLayoutRounding="False"/>
+                            <Label x:Name="dest3" Content="" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="66" Canvas.Left="255" Canvas.Top="11" Foreground="Red"/>
+                            <Image x:Name="rating3" HorizontalAlignment="Left" Height="69" VerticalAlignment="Top" Width="112" Source="white.png" Canvas.Left="85" Canvas.Top="27" Stretch="UniformToFill"/>
+                            <Rectangle x:Name="rect3" Fill="White" HorizontalAlignment="Left" Height="27" Stroke="White" VerticalAlignment="Top" Width="67" Canvas.Left="255" Canvas.Top="63"/>
+                            <Label x:Name="add3" Content="ADD" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="43" FontSize="16" Foreground="White" Canvas.Left="267" Canvas.Top="61"/>
+                            <Label x:Name="time3" Content="" Canvas.Left="12" Width="75" Height="27" Foreground="Red" FontSize="12"/>
+                        </Canvas>
+                        <Canvas Height="105" Width="327">
+                            <Rectangle Fill="White" HorizontalAlignment="Left" Height="98" Stroke="White" VerticalAlignment="Top" Width="329"/>
+                            <Image x:Name="pic4" HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="71" Source="white.png" Canvas.Left="8" Canvas.Top="32"/>
+                            <Label x:Name="info4" Content="" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="166" Canvas.Left="85" Canvas.Top="16" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden" UseLayoutRounding="False"/>
+                            <Label x:Name="dest4" Content="" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="66" Canvas.Left="255" Canvas.Top="11" Foreground="Red"/>
+                            <Image x:Name="rating4" HorizontalAlignment="Left" Height="69" VerticalAlignment="Top" Width="112" Source="white.png" Canvas.Left="85" Canvas.Top="27" Stretch="UniformToFill"/>
+                            <Rectangle x:Name="rect4" Fill="White" HorizontalAlignment="Left" Height="27" Stroke="White" VerticalAlignment="Top" Width="67" Canvas.Left="255" Canvas.Top="63"/>
+                            <Label x:Name="add4" Content="ADD" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="43" FontSize="16" Foreground="White" Canvas.Left="267" Canvas.Top="61"/>
+                            <Label x:Name="time4" Content="" Canvas.Left="12" Width="75" Height="27" Foreground="Red" FontSize="12"/>
+                        </Canvas>
+                    </ListView>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="GIVE" Header="GIVE" BorderBrush="White" FontSize="24" Background="{x:Null}" Margin="27.667,-2,-69,-0.333">
+                <Grid Background="White" Margin="0,2,0.333,-2.333">
+                    <ListView x:Name="listView_Copy2" HorizontalAlignment="Left" ScrollViewer.CanContentScroll="False" Height="399" Margin="10,0,-5.333,0" VerticalAlignment="Top" Width="355" BorderBrush="Black" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn/>
+                            </GridView>
+                        </ListView.View>
+                        <Canvas Height="105" Width="327">
+                            <Rectangle Fill="White" HorizontalAlignment="Left" Height="98" Stroke="White" VerticalAlignment="Top" Width="329"/>
+                            <Image x:Name="pic21" HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="71" Source="white.png" Canvas.Left="8" Canvas.Top="32"/>
+                            <Label x:Name="info21" Content="" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="166" Canvas.Left="85" Canvas.Top="16" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden" UseLayoutRounding="False"/>
+                            <Label x:Name="dest21" Content="" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="66" Canvas.Left="255" Canvas.Top="11" Foreground="Red"/>
+                            <Image x:Name="rating21" HorizontalAlignment="Left" Height="69" VerticalAlignment="Top" Width="112" Source="white.png" Canvas.Left="85" Canvas.Top="27" Stretch="UniformToFill"/>
+                            <Button x:Name="rect21" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="67" Canvas.Left="255" Canvas.Top="63" Background="Red" BorderBrush="{x:Null}" Content="ADD" FontSize="16" Click="rect21_Click"/>
+                            <Label x:Name="time21" Content="" Canvas.Left="12" Width="185" Height="27" Foreground="Red" FontSize="12"/>
+                        </Canvas>
+                        <Canvas Height="105" Width="327">
+                            <Rectangle Fill="White" HorizontalAlignment="Left" Height="98" Stroke="White" VerticalAlignment="Top" Width="329"/>
+                            <Image x:Name="pic22" HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="71" Source="white.png" Canvas.Left="8" Canvas.Top="32"/>
+                            <Label x:Name="info22" Content="" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="166" Canvas.Left="85" Canvas.Top="16" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden" UseLayoutRounding="False"/>
+                            <Label x:Name="dest22" Content="" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="66" Canvas.Left="255" Canvas.Top="11" Foreground="Red"/>
+                            <Image x:Name="rating22" HorizontalAlignment="Left" Height="69" VerticalAlignment="Top" Width="112" Source="white.png" Canvas.Left="85" Canvas.Top="27" Stretch="UniformToFill"/>
+                            <Label x:Name="time22" Content="" Canvas.Left="12" Width="185" Height="27" Foreground="Red" FontSize="12"/>
+                            <Button x:Name="rect22" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="67" Canvas.Left="254.667" Canvas.Top="62.667" Background="Red" BorderBrush="{x:Null}" Content="ADD" FontSize="16" Click="rect22_Click"/>
+                        </Canvas>
+                        <Canvas Height="105" Width="327">
+                            <Rectangle Fill="White" HorizontalAlignment="Left" Height="98" Stroke="White" VerticalAlignment="Top" Width="329"/>
+                            <Image x:Name="pic23" HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="71" Source="white.png" Canvas.Left="8" Canvas.Top="32"/>
+                            <Label x:Name="info23" Content="" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="166" Canvas.Left="85" Canvas.Top="16" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden" UseLayoutRounding="False"/>
+                            <Label x:Name="dest23" Content="" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="66" Canvas.Left="255" Canvas.Top="11" Foreground="Red"/>
+                            <Image x:Name="rating23" HorizontalAlignment="Left" Height="69" VerticalAlignment="Top" Width="112" Source="white.png" Canvas.Left="85" Canvas.Top="27" Stretch="UniformToFill"/>
+                            <Label x:Name="time23" Content="" Canvas.Left="12" Width="185" Height="27" Foreground="Red" FontSize="12"/>
+                            <Button x:Name="rect23" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="67" Canvas.Left="254.667" Canvas.Top="62.667" Background="Red" BorderBrush="{x:Null}" Content="ADD" FontSize="16" Click="rect23_Click"/>
+                        </Canvas>
+                        <Canvas Height="105" Width="327">
+                            <Rectangle Fill="White" HorizontalAlignment="Left" Height="98" Stroke="White" VerticalAlignment="Top" Width="329"/>
+                            <Image x:Name="pic24" HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="71" Source="white.png" Canvas.Left="8" Canvas.Top="32"/>
+                            <Label x:Name="info24" Content="" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="166" Canvas.Left="85" Canvas.Top="16" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden" UseLayoutRounding="False"/>
+                            <Label x:Name="dest24" Content="" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="66" Canvas.Left="255" Canvas.Top="11" Foreground="Red"/>
+                            <Image x:Name="rating24" HorizontalAlignment="Left" Height="69" VerticalAlignment="Top" Width="112" Source="white.png" Canvas.Left="85" Canvas.Top="27" Stretch="UniformToFill"/>
+                            <Rectangle x:Name="rect24" Fill="White" HorizontalAlignment="Left" Height="27" Stroke="White" VerticalAlignment="Top" Width="67" Canvas.Left="255" Canvas.Top="63"/>
+                            <Label x:Name="time24" Content="" Canvas.Left="12" Width="185" Height="27" Foreground="Red" FontSize="12"/>
+                            <Rectangle x:Name="rect23_Copy" Fill="Red" HorizontalAlignment="Left" Height="27" Stroke="White" VerticalAlignment="Top" Width="67" Canvas.Left="254.667" Canvas.Top="62.667"/>
+                            <Button x:Name="rect23_Copy4" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="67" Canvas.Left="254.667" Canvas.Top="62.667" Background="Red" BorderBrush="{x:Null}" Content="ADD" FontSize="16" Click="rect23_Click"/>
+                        </Canvas>
+                        <Canvas Height="105" Width="327">
+                            <Rectangle Fill="White" HorizontalAlignment="Left" Height="98" Stroke="White" VerticalAlignment="Top" Width="329"/>
+                            <Image x:Name="pic25" HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="71" Source="white.png" Canvas.Left="8" Canvas.Top="32"/>
+                            <Label x:Name="info25" Content="" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="166" Canvas.Left="85" Canvas.Top="16" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden" UseLayoutRounding="False"/>
+                            <Label x:Name="dest25" Content="" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="66" Canvas.Left="255" Canvas.Top="11" Foreground="Red"/>
+                            <Image x:Name="rating25" HorizontalAlignment="Left" Height="69" VerticalAlignment="Top" Width="112" Source="white.png" Canvas.Left="85" Canvas.Top="27" Stretch="UniformToFill"/>
+                            <Rectangle x:Name="rect25" Fill="White" HorizontalAlignment="Left" Height="27" Stroke="White" VerticalAlignment="Top" Width="67" Canvas.Left="255" Canvas.Top="63"/>
+                            <Label x:Name="time25" Content="" Canvas.Left="12" Width="185" Height="27" Foreground="Red" FontSize="12"/>
+                            <Rectangle x:Name="rect23_Copy1" Fill="Red" HorizontalAlignment="Left" Height="27" Stroke="White" VerticalAlignment="Top" Width="67" Canvas.Left="254.667" Canvas.Top="62.667"/>
+                            <Button x:Name="rect23_Copy5" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="67" Canvas.Left="254.667" Canvas.Top="62.667" Background="Red" BorderBrush="{x:Null}" Content="ADD" FontSize="16" Click="rect23_Click"/>
+                        </Canvas>
+                        <Canvas Height="105" Width="327">
+                            <Rectangle Fill="White" HorizontalAlignment="Left" Height="98" Stroke="White" VerticalAlignment="Top" Width="329"/>
+                            <Image x:Name="pic26" HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="71" Source="white.png" Canvas.Left="8" Canvas.Top="32"/>
+                            <Label x:Name="info26" Content="" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="166" Canvas.Left="85" Canvas.Top="16" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden" UseLayoutRounding="False"/>
+                            <Label x:Name="dest26" Content="" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="66" Canvas.Left="255" Canvas.Top="11" Foreground="Red"/>
+                            <Image x:Name="rating26" HorizontalAlignment="Left" Height="69" VerticalAlignment="Top" Width="112" Source="white.png" Canvas.Left="85" Canvas.Top="27" Stretch="UniformToFill"/>
+                            <Rectangle x:Name="rect26" Fill="White" HorizontalAlignment="Left" Height="27" Stroke="White" VerticalAlignment="Top" Width="67" Canvas.Left="255" Canvas.Top="63"/>
+                            <Label x:Name="time26" Content="" Canvas.Left="12" Width="185" Height="27" Foreground="Red" FontSize="12"/>
+                            <Rectangle x:Name="rect23_Copy2" Fill="Red" HorizontalAlignment="Left" Height="27" Stroke="White" VerticalAlignment="Top" Width="67" Canvas.Left="254.667" Canvas.Top="62.667"/>
+                            <Button x:Name="rect23_Copy6" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="67" Canvas.Left="254.667" Canvas.Top="62.667" Background="Red" BorderBrush="{x:Null}" Content="ADD" FontSize="16" Click="rect23_Click"/>
+                        </Canvas>
+                    </ListView>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="GET" Header="GET" BorderBrush="White" FontSize="24" Background="{x:Null}" Margin="86.333,0,-132,-2.333">
+                <Grid Background="White" Margin="0,2,0.333,-2.333">
+                    <ListView x:Name="listView_Copy" HorizontalAlignment="Left" ScrollViewer.CanContentScroll="False" Height="399" Margin="10,0,-5.333,0" VerticalAlignment="Top" Width="355" BorderBrush="Black" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn/>
+                            </GridView>
+                        </ListView.View>
+                        <Canvas Height="105" Width="327">
+                            <Rectangle Fill="White" HorizontalAlignment="Left" Height="98" Stroke="White" VerticalAlignment="Top" Width="329"/>
+                            <Image x:Name="pic11" HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="71" Source="white.png" Canvas.Left="8" Canvas.Top="32"/>
+                            <Label x:Name="info11" Content="" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="166" Canvas.Left="85" Canvas.Top="16" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden" UseLayoutRounding="False"/>
+                            <Label x:Name="dest11" Content="" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="66" Canvas.Left="255" Canvas.Top="11" Foreground="Red"/>
+                            <Image x:Name="rating11" HorizontalAlignment="Left" Height="69" VerticalAlignment="Top" Width="112" Source="white.png" Canvas.Left="85" Canvas.Top="27" Stretch="UniformToFill"/>
+                            <Label x:Name="time11" Content="" Canvas.Left="12" Width="185" Height="27" Foreground="Red" FontSize="12"/>
+                            <Button x:Name="rect11" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="67" Canvas.Left="254.667" Canvas.Top="62.667" Background="Black" BorderBrush="{x:Null}" Content="ADD" FontSize="16" Click="rect11_Click"/>
+                        </Canvas>
+                        <Canvas Height="105" Width="327">
+                            <Rectangle Fill="White" HorizontalAlignment="Left" Height="98" Stroke="White" VerticalAlignment="Top" Width="329"/>
+                            <Image x:Name="pic12" HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="71" Source="white.png" Canvas.Left="8" Canvas.Top="32"/>
+                            <Label x:Name="info12" Content="" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="166" Canvas.Left="85" Canvas.Top="16" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden" UseLayoutRounding="False"/>
+                            <Label x:Name="dest12" Content="" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="66" Canvas.Left="255" Canvas.Top="11" Foreground="Red"/>
+                            <Image x:Name="rating12" HorizontalAlignment="Left" Height="69" VerticalAlignment="Top" Width="112" Source="white.png" Canvas.Left="85" Canvas.Top="27" Stretch="UniformToFill"/>
+                            <Label x:Name="time12" Content="" Canvas.Left="12" Width="185" Height="27" Foreground="Red" FontSize="12"/>
+                            <Button x:Name="rect12" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="67" Canvas.Left="254.667" Canvas.Top="62.667" Background="Black" BorderBrush="{x:Null}" Content="ADD" FontSize="16" Click="rect12_Click"/>
+                        </Canvas>
+                        <Canvas Height="105" Width="327">
+                            <Rectangle Fill="White" HorizontalAlignment="Left" Height="98" Stroke="White" VerticalAlignment="Top" Width="329"/>
+                            <Image x:Name="pic13" HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="71" Source="white.png" Canvas.Left="8" Canvas.Top="32"/>
+                            <Label x:Name="info13" Content="" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="166" Canvas.Left="85" Canvas.Top="16" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden" UseLayoutRounding="False"/>
+                            <Label x:Name="dest13" Content="" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="66" Canvas.Left="255" Canvas.Top="11" Foreground="Red"/>
+                            <Image x:Name="rating13" HorizontalAlignment="Left" Height="69" VerticalAlignment="Top" Width="112" Source="white.png" Canvas.Left="85" Canvas.Top="27" Stretch="UniformToFill"/>
+                            <Label x:Name="time13" Content="" Canvas.Left="12" Width="185" Height="27" Foreground="Red" FontSize="12"/>
+                            <Button x:Name="rect13" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="67" Canvas.Left="254.667" Canvas.Top="62.667" Background="Black" BorderBrush="{x:Null}" Content="ADD" FontSize="16" Click="rect13_Click"/>
+                        </Canvas>
+                        <Canvas Height="105" Width="327">
+                            <Rectangle Fill="White" HorizontalAlignment="Left" Height="98" Stroke="White" VerticalAlignment="Top" Width="329"/>
+                            <Image x:Name="pic14" HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="71" Source="white.png" Canvas.Left="8" Canvas.Top="32"/>
+                            <Label x:Name="info14" Content="" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="166" Canvas.Left="85" Canvas.Top="16" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden" UseLayoutRounding="False"/>
+                            <Label x:Name="dest14" Content="" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="66" Canvas.Left="255" Canvas.Top="11" Foreground="Red"/>
+                            <Image x:Name="rating14" HorizontalAlignment="Left" Height="69" VerticalAlignment="Top" Width="112" Source="white.png" Canvas.Left="85" Canvas.Top="27" Stretch="UniformToFill"/>
+                            <Rectangle x:Name="rect14" Fill="White" HorizontalAlignment="Left" Height="27" Stroke="White" VerticalAlignment="Top" Width="67" Canvas.Left="255" Canvas.Top="63"/>
+                            <Label x:Name="time14" Content="" Canvas.Left="12" Width="185" Height="27" Foreground="Red" FontSize="12"/>
+                            <Rectangle x:Name="rect13_Copy" Fill="Black" HorizontalAlignment="Left" Height="27" Stroke="White" VerticalAlignment="Top" Width="67" Canvas.Left="254.667" Canvas.Top="62.667"/>
+                            <Button x:Name="rect13_Copy3" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="67" Canvas.Left="254.667" Canvas.Top="62.667" Background="Black" BorderBrush="{x:Null}" Content="ADD" FontSize="16" Click="rect13_Click"/>
+                        </Canvas>
+                        <Canvas Height="105" Width="327">
+                            <Rectangle Fill="White" HorizontalAlignment="Left" Height="98" Stroke="White" VerticalAlignment="Top" Width="329"/>
+                            <Image x:Name="pic15" HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="71" Source="white.png" Canvas.Left="8" Canvas.Top="32"/>
+                            <Label x:Name="info15" Content="" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="166" Canvas.Left="85" Canvas.Top="16" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden" UseLayoutRounding="False"/>
+                            <Label x:Name="dest15" Content="" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="66" Canvas.Left="255" Canvas.Top="11" Foreground="Red"/>
+                            <Image x:Name="rating15" HorizontalAlignment="Left" Height="69" VerticalAlignment="Top" Width="112" Source="white.png" Canvas.Left="85" Canvas.Top="27" Stretch="UniformToFill"/>
+                            <Rectangle x:Name="rect15" Fill="White" HorizontalAlignment="Left" Height="27" Stroke="White" VerticalAlignment="Top" Width="67" Canvas.Left="255" Canvas.Top="63"/>
+                            <Label x:Name="time15" Content="" Canvas.Left="12" Width="185" Height="27" Foreground="Red" FontSize="12"/>
+                            <Rectangle x:Name="rect13_Copy1" Fill="Black" HorizontalAlignment="Left" Height="27" Stroke="White" VerticalAlignment="Top" Width="67" Canvas.Left="254.667" Canvas.Top="62.667"/>
+                            <Button x:Name="rect13_Copy4" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="67" Canvas.Left="254.667" Canvas.Top="62.667" Background="Black" BorderBrush="{x:Null}" Content="ADD" FontSize="16" Click="rect13_Click"/>
+                        </Canvas>
+                        <Canvas Height="105" Width="327">
+                            <Rectangle Fill="White" HorizontalAlignment="Left" Height="98" Stroke="White" VerticalAlignment="Top" Width="329"/>
+                            <Image x:Name="pic16" HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="71" Source="white.png" Canvas.Left="8" Canvas.Top="32"/>
+                            <Label x:Name="info16" Content="" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="166" Canvas.Left="85" Canvas.Top="16" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden" UseLayoutRounding="False"/>
+                            <Label x:Name="dest16" Content="" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="66" Canvas.Left="255" Canvas.Top="11" Foreground="Red"/>
+                            <Image x:Name="rating16" HorizontalAlignment="Left" Height="69" VerticalAlignment="Top" Width="112" Source="white.png" Canvas.Left="85" Canvas.Top="27" Stretch="UniformToFill"/>
+                            <Rectangle x:Name="rect16" Fill="White" HorizontalAlignment="Left" Height="27" Stroke="White" VerticalAlignment="Top" Width="67" Canvas.Left="255" Canvas.Top="63"/>
+                            <Label x:Name="time16" Content="" Canvas.Left="12" Width="185" Height="27" Foreground="Red" FontSize="12"/>
+                            <Rectangle x:Name="rect13_Copy2" Fill="Black" HorizontalAlignment="Left" Height="27" Stroke="White" VerticalAlignment="Top" Width="67" Canvas.Left="254.667" Canvas.Top="62.667"/>
+                            <Button x:Name="rect13_Copy5" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="67" Canvas.Left="254.667" Canvas.Top="62.667" Background="Black" BorderBrush="{x:Null}" Content="ADD" FontSize="16" Click="rect13_Click"/>
+                        </Canvas>
+                    </ListView>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Button x:Name="schedule" Content="Create Pool Post" Height="37" Margin="80,552,78.667,0" VerticalAlignment="Top" FontSize="16" Foreground="White" BorderBrush="Black" Background="#FF787878" Click="schedule_Click"/>
+        <Canvas x:Name="promt" HorizontalAlignment="Left" Height="357" VerticalAlignment="Top" Width="346" Margin="20,161,0,0">
+            <Grid Height="324" Canvas.Top="10" Width="336" Background="#F2E3E3E3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="25*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="label" Content="Confirmation:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="46" Width="157" Margin="88,0,0,0" FontSize="24"/>
+                <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="27,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="94" Width="286" FontSize="20" TextAlignment="Center" Grid.ColumnSpan="2"><Run Text="By clicking confirm you are agreeing to travel "/><Run Text="with the named person:"/></TextBlock>
+                <Image x:Name="promt_pic" HorizontalAlignment="Left" Height="94" VerticalAlignment="Top" Width="101" Source="unkown.png" Margin="14,36,0,0" MouseLeftButtonUp="promt_pic_MouseLeftButtonUp"/>
+                <Label x:Name="promt_name" Content="NAME" HorizontalAlignment="Left" Height="33" Margin="116,38,0,0" VerticalAlignment="Top" Width="197" FontSize="18" Grid.ColumnSpan="2"/>
+                <Button x:Name="confirm" Content="CONFIRM" HorizontalAlignment="Left" Margin="183,270,0,0" VerticalAlignment="Top" Width="117" Background="Red" BorderBrush="{x:Null}" FontSize="16" Click="confirm_Click"/>
+                <Label x:Name="promt_time" Content="TIME" HorizontalAlignment="Left" Height="33" Margin="116,69,0,0" VerticalAlignment="Top" Width="197" FontSize="18" Grid.ColumnSpan="2"/>
+                <Label x:Name="promt_dest" Content="DESTINATION" HorizontalAlignment="Left" Height="33" Margin="116,99,0,0" VerticalAlignment="Top" Width="146" FontSize="18"/>
+                <Button x:Name="Cancel" Content="CANCEL" HorizontalAlignment="Left" Margin="48,270,0,0" VerticalAlignment="Top" Width="117" Background="#FF787878" BorderBrush="{x:Null}" FontSize="16" Click="Cancel_Click"/>
+            </Grid>
+        </Canvas>
+    </Grid>
+</Page>

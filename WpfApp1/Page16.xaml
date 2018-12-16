@@ -1,0 +1,43 @@
+﻿<Page x:Class="WpfApp1.Page16"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="667" d:DesignWidth="375"
+      Title="Page16">
+
+    <Grid Background="White">
+        <Rectangle HorizontalAlignment="Left" Height="60" Stroke="Black" VerticalAlignment="Top" Width="375" Fill="Black" Margin="0,0,-0.333,0"/>
+        <Label Content="SCHPOOL" Height="50" Margin="120.75,10,119.25,0" VerticalAlignment="Top" Background="Black" Foreground="Red" FontSize="26" FontWeight="Bold"/>
+        <Button x:Name="Notification" Height="Auto" UseLayoutRounding="True" Margin="5,11,296.667,612.667" Background="{x:Null}" BorderBrush="{x:Null}" Click="Notification_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="notify.png" Stretch="Uniform"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="message" Height="Auto" UseLayoutRounding="True" Margin="283,6,-0.333,606.667" Background="{x:Null}" BorderBrush="{x:Null}" Click="message_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="message.png" Stretch="Uniform"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="profile_but" Content="PROFILE" HorizontalAlignment="Left" Height="58" Margin="-1,611,0,-2.333" VerticalAlignment="Top" Width="96" FontSize="16" Background="Black" Foreground="White" BorderBrush="Black" Click="profile_but_Click"/>
+        <Button x:Name="home_but" Content="HOME" HorizontalAlignment="Left" Height="58" Margin="94,611,0,-2.333" VerticalAlignment="Top" Width="95" FontSize="16" Foreground="White" Background="Black" BorderBrush="Black" Click="Button_Click"/>
+        <Button x:Name="Ride_but" Content="RIDE" HorizontalAlignment="Left" Height="58" Margin="187,611,0,-2.333" VerticalAlignment="Top" Width="96" FontSize="16" Background="Black" Foreground="White" BorderBrush="Black" Click="Ride_but_Click"/>
+        <Button x:Name="Settings_but" Content="SETTING" HorizontalAlignment="Left" Height="58" Margin="281,611,-1.333,-2.333" VerticalAlignment="Top" Width="95" FontSize="16" Background="Red" Foreground="White" BorderBrush="Red"/>
+        <Label Content="Verify Account:" HorizontalAlignment="Left" Height="37" Margin="10,251,0,0" VerticalAlignment="Top" Width="154" FontSize="18" Foreground="#DD000000" FontWeight="Bold"/>
+        <Label Content="Upload Licence" HorizontalAlignment="Left" Height="37" Margin="23,288,0,0" VerticalAlignment="Top" Width="144" FontSize="18"/>
+        <Label Content="Upload School ID" HorizontalAlignment="Left" Height="37" Margin="23,329,0,0" VerticalAlignment="Top" Width="159" FontSize="18"/>
+        <TextBox x:Name="license" HorizontalAlignment="Left" Height="37" Margin="182,280,0,0" TextWrapping="Wrap" Text="enter file name" VerticalAlignment="Top" Width="189" FontSize="16" TextAlignment="Center" GotKeyboardFocus="license_GotKeyboardFocus" LostKeyboardFocus="license_LostKeyboardFocus"/>
+        <TextBox x:Name="id" HorizontalAlignment="Left" Height="37" Margin="182,325,0,0" TextWrapping="Wrap" Text="enter file name" VerticalAlignment="Top" Width="189" FontSize="16" TextAlignment="Center" LostKeyboardFocus="id_LostKeyboardFocus" GotKeyboardFocus="id_GotKeyboardFocus"/>
+        <Label x:Name="label" Content="Settings:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="73" Width="255" Margin="0,64,0,0" FontSize="36" FontWeight="Bold"/>
+        <Image x:Name="Photo" HorizontalAlignment="Left" Height="128" Margin="208,66,0,0" VerticalAlignment="Top" Width="128" Source="unkown.png"/>
+        <TextBox x:Name="profilePic" HorizontalAlignment="Left" Height="34" Margin="206,202,0,0" TextWrapping="Wrap" Text="ENTER FILE NAME" VerticalAlignment="Top" Width="128" TextAlignment="Center" FontSize="14" GotKeyboardFocus="profilePic_GotKeyboardFocus" LostKeyboardFocus="profilePic_LostKeyboardFocus"/>
+        <Label Content="Update Profile Picture:" HorizontalAlignment="Left" Height="37" Margin="9,204,0,0" VerticalAlignment="Top" Width="192" FontSize="18"/>
+        <Label Content="Update password:" HorizontalAlignment="Left" Height="37" Margin="23,409,0,0" VerticalAlignment="Top" Width="159" FontSize="18"/>
+        <TextBox x:Name="id_Copy" HorizontalAlignment="Left" Height="37" Margin="182,405,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" FontSize="16" TextAlignment="Center" LostKeyboardFocus="id_LostKeyboardFocus" GotKeyboardFocus="id_GotKeyboardFocus"/>
+        <Label Content="Security:" HorizontalAlignment="Left" Height="37" Margin="10,379,0,0" VerticalAlignment="Top" Width="154" FontSize="18" Foreground="#DD000000" FontWeight="Bold"/>
+        <Button x:Name="button" Content="LOGOUT" HorizontalAlignment="Left" Margin="79,498,0,0" VerticalAlignment="Top" Width="212" Height="46" FontSize="20" Background="White" BorderBrush="#FFCECECE" Foreground="#DD000000" Click="button_Click_2"/>
+
+    </Grid>
+</Page>

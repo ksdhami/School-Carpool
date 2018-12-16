@@ -1,0 +1,42 @@
+﻿.
+clark@theark.ca
+sos
+Clark
+Johnson
+34 earth ave
+T2345
+University of Calgary
+clark_profile_pic.png
+I'm new on earth so just trying to fit in and learn everything i have missed.
+clark_id
+clark_license
+Hip-hop, rock, rap, classical, indian
+NEW USER
+.
+mathew@test.ca
+123
+Mathew
+Boy
+23 randome road 
+T24GJ
+University of Calgary
+mathew_profile_pic.png
+Love to drive and play Basketball
+enter file name
+enter file name
+Hip-hop, rock, rap,
+NEW USER
+.
+emily@test.ca
+1234
+Emily
+Clown
+35 random ave
+TG35
+Univeristy of Calgary
+emily_profile_pic.png
+I'm a fourth year u of c student and i love driving.
+enter file name
+enter file name
+Jazz and rap
+NEW USER
