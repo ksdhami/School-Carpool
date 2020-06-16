@@ -29,4 +29,4 @@ Strings used for testing:
 
 ## Built With
 
-*[Visual Studio](https://visualstudio.microsoft.com/vs/) - IDE
+* [Visual Studio](https://visualstudio.microsoft.com/vs/) - IDE
