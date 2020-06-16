@@ -18,14 +18,18 @@ The message information is stored at: \WpfApp1\bin\Debug\messages.txt
 ## Running The Tests
 
 Strings used for testing:
-* email: clark@theark.ca 
-* password: sos
-
-* email: emily@test.ca 
-* password: 1234
-
-* email: mathew@test.ca 
-* password: 123
+```
+email: clark@theark.ca 
+password: sos
+```
+```
+email: emily@test.ca 
+password: 1234
+```
+```
+email: mathew@test.ca 
+password: 123
+```
 
 ## Built With
 
